@@ -32,7 +32,7 @@ Create the following users:
 
 This simulates different departments inside an organization.
 
-![Users Created](screenshots/entra_users_created.png)
+![Users Created](entra_users_created.png)
 
 
 
@@ -49,7 +49,7 @@ Create two security groups:
 
 Security groups are used to manage access for multiple users at once.
 
-![Security Groups](screenshots/entra_security_groups_created.png)
+![Security Groups](entra_security_groups_created.png)
 
 ---
 
@@ -69,7 +69,7 @@ Finance-Team → finance.user
 
 This demonstrates group-based access control.
 
-![Group Membership](screenshots/entra_group_membership.png)
+![Group Membership](entra_group_membership.png)
 
 
 
@@ -89,7 +89,7 @@ it.admin
 
 This demonstrates delegated administration using Role-Based Access Control.
 
-![RBAC Role](screenshots/entra_rbac_role_assignment.png)
+![RBAC Role](entra_rbac_role_assignment.png)
 
 
 ### Step 5 — Reset a User Password
@@ -100,5 +100,5 @@ Entra ID → Users → hr.user → Reset Password
 
 Password resets are a common identity lifecycle task.
 
-![Password Reset](screenshots/entra_password_reset.png)
+![Password Reset](entra_password_reset.png)
 
