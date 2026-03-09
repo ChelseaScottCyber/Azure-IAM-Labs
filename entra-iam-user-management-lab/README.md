@@ -18,53 +18,87 @@ Tenant Type: Free developer tenant
 - Password reset procedures
 
 ## Lab Steps
+### Step 1 — Create Users
 
-### 1. Create Users
-Three users were created to simulate different departments.
+Navigate to:
+
+Entra ID → Users → New User
+
+Create the following users:
 
 - hr.user
 - finance.user
 - it.admin
 
+This simulates different departments inside an organization.
+
 ![Users Created](screenshots/entra_users_created.png)
 
----
 
-### 2. Create Security Groups
 
-Security groups created:
+### Step 2 — Create Security Groups
+
+Navigate to:
+
+Entra ID → Groups → New Group
+
+Create two security groups:
 
 - HR-Team
 - Finance-Team
 
-![Groups Created](screenshots/entra_security_groups_created.png)
+Security groups are used to manage access for multiple users at once.
+
+![Security Groups](screenshots/entra_security_groups_created.png)
 
 ---
 
-### 3. Configure Group Membership
+### Step 3 — Assign Group Membership
 
-Users were added to their corresponding department groups.
+Navigate to:
+
+Entra ID → Groups → HR-Team → Members
+
+Add:
+
+hr.user
+
+Repeat for:
+
+Finance-Team → finance.user
+
+This demonstrates group-based access control.
 
 ![Group Membership](screenshots/entra_group_membership.png)
 
----
 
-### 4. Assign RBAC Role
 
-The **User Administrator** role was assigned to the IT admin account to simulate delegated administration.
+### Step 4 — Assign Administrative Role (RBAC)
+
+Navigate to:
+
+Entra ID → Roles & administrators → User Administrator
+
+Click:
+
+Add assignment
+
+Assign the role to:
+
+it.admin
+
+This demonstrates delegated administration using Role-Based Access Control.
 
 ![RBAC Role](screenshots/entra_rbac_role_assignment.png)
 
----
 
-### 5. Password Reset
+### Step 5 — Reset a User Password
 
-Password reset was tested for a user account to demonstrate lifecycle management.
+Navigate to:
+
+Entra ID → Users → hr.user → Reset Password
+
+Password resets are a common identity lifecycle task.
 
 ![Password Reset](screenshots/entra_password_reset.png)
 
----
-
-## Key Takeaways
-
-This lab demonstrates fundamental IAM administration tasks including identity provisioning, access control, and privilege management within Microsoft Entra ID.
